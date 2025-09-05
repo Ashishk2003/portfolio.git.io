@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ashish Kumar — Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Ashish Kumar</div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#experience">Experience</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <a class="btn-resume" href="assets/Ashish_Kumar_CV.pdf" target="_blank" rel="noopener">Resume</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="section bg-1" aria-label="Home">
+    <div class="section-inner">
+      <p class="eyebrow">Hi, my name is</p>
+      <h1 class="big-name">Ashish Kumar<span class="dot">.</span></h1>
+      <h2 class="role"><span id="typed" aria-live="polite"></span></h2>
+      <p class="lead">Entry-level Software Developer skilled in Java, Python and SQL with hands-on experience building real-time apps and REST APIs.</p>
+
+      <div class="cta">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="assets/Ashish_Kumar_CV.pdf" target="_blank" class="btn outline">Download CV</a>
+      </div>
+
+      <div class="social-row">
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="mailto:youremail@example.com"><i class="fa fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT + EDUCATION -->
+  <section id="about" class="section bg-2" aria-label="About & Education">
+    <div class="about-card">
+      <h2>About Me</h2>
+      <h3>Ashish Kumar</h3>
+      <p>
+        Passionate and technology-driven Electronics and Communication Engineering undergraduate at Vidya Jyothi Institute of Technology, Hyderabad. Skilled in software development, IoT projects, and cloud technologies. Eager to apply my technical knowledge to real-world challenges as part of a collaborative IT team.
+      </p>
+
+      <h2>Education</h2>
+      <div class="edu-grid">
+        <div class="edu" role="button" onclick="openCertificate('assets/vjit-cert.png')" tabindex="0">
+          <h3>Vidya Jyothi Institute of Technology, Hyderabad</h3>
+          <p>B.Tech in Electronics and Communication Engineering — CGPA 8.36/10 (2021–2025)</p>
+        </div>
+        <div class="edu" role="button" onclick="openCertificate('assets/chaitanya-cert.png')" tabindex="0">
+          <h3>Chaitanya Junior College, Telangana</h3>
+          <p>Intermediate (MPC) — 952/1000 (2019–2021)</p>
+        </div>
+        <div class="edu" role="button" onclick="openCertificate('assets/navodaya-cert.png')" tabindex="0">
+          <h3>Navodaya High School, Telangana</h3>
+          <p>SSC — CGPA 8.8/10 (2019)</p>
+        </div>
+      </div>
+
+      <a class="btn-resume" href="assets/Ashish_Kumar_CV.pdf" target="_blank" rel="noopener"><i class="fa fa-file-pdf"></i> Download CV</a>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section bg-3" aria-label="Skills">
+    <div class="section-inner">
+      <h2>My Tech Arsenal</h2>
+
+      <h3 class="skill-title">Programming</h3>
+      <div class="skill-grid">
+        <div class="skill-card">Python</div>
+        <div class="skill-card">Java</div>
+        <div class="skill-card">C</div>
+        <div class="skill-card">SQL</div>
+      </div>
+
+      <h3 class="skill-title">Web & Backend</h3>
+      <div class="skill-grid">
+        <div class="skill-card">HTML / CSS</div>
+        <div class="skill-card">REST API</div>
+      </div>
+
+      <h3 class="skill-title">Cloud & Tools</h3>
+      <div class="skill-grid">
+        <div class="skill-card">AWS (EC2, S3, IAM, VPC)</div>
+        <div class="skill-card">Google Cloud Platform</div>
+        <div class="skill-card">Salesforce</div>
+        <div class="skill-card">Git</div>
+        <div class="skill-card">Arduino IDE</div>
+        <div class="skill-card">Pandas</div>
+        <div class="skill-card">OpenCV</div>
+      </div>
+
+      <h3 class="skill-title">Soft Skills</h3>
+      <div class="skill-grid">
+        <div class="skill-card">Problem Solving</div>
+        <div class="skill-card">Analytical Thinking</div>
+        <div class="skill-card">Team Collaboration</div>
+        <div class="skill-card">Cloud Integration</div>
+        <div class="skill-card">Communication</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS (unchanged except your content) -->
+  <section id="projects" class="section bg-4" aria-label="Projects">
+    <div class="section-inner">
+      <h2>My Creations</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>WiFi-Enabled Digital Notice Board</h3>
+          <p>Dynamic messaging platform to display real-time updates using MQTT protocol and P10 LED display; eliminated manual updates for institutions.</p>
+          <div class="stack">
+            <span class="tag">ESP32-CAM</span>
+            <span class="tag">Arduino IDE</span>
+            <span class="tag">IoT</span>
+            <span class="tag">Cloud Integration</span>
+            <span class="tag">Telegram Bot API</span>
+          </div>
+          <div class="project-links">
+            <a class="link" href="https://github.com/Ashishk2003/project-2" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>WiFi-Enabled Digital Notice Board</h3>
+          <p>Dynamic messaging platform to display real-time updates using MQTT protocol and P10 LED display; eliminated manual updates for institutions.</p>
+          <div class="stack">
+            <span class="tag">ESP8266</span>
+            <span class="tag">Python</span>
+            <span class="tag">MQTT</span>
+            <span class="tag">Arduino IDE</span>
+          </div>
+          <div class="project-links">
+            <a class="link" href="https://github.com/Ashishk2003/project-1" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Web-Based Quiz Management System</h3>
+          <p>Developed with separate teacher and student login modules. Features quiz creation, student management, result sharing, secure authentication, and answer review.</p>
+          <div class="stack">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a class="link" href="https://github.com/Ashishk2003/project-3" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE / CERTIFICATES (unchanged) -->
+  <section id="experience" class="section bg-1" aria-label="Experience">
+    <div class="section-inner">
+      <h2>Internships & Certifications</h2>
+      <div class="exp-grid">
+        <div class="exp" role="button" onclick="openCertificate('assets/aws-cert.png')" tabindex="0">
+          <h3>AWS Cloud Virtual Internship</h3>
+          <p>Worked with EC2, S3, IAM, VPC and automation in cloud environments.</p>
+        </div>
+        <div class="exp" role="button" onclick="openCertificate('assets/salesforce-cert.png')" tabindex="0">
+          <h3>Salesforce Developer Internship</h3>
+          <p>Completed Apex, LWC, and Process Automation. Earned Salesforce badges.</p>
+        </div>
+        <div class="exp" role="button" onclick="openCertificate('assets/sql-cert.png')" tabindex="0">
+          <h3>SQL Bootcamp</h3>
+          <p>Mastered SQL queries, joins, indexing, and optimization.</p>
+        </div>
+        <div class="exp" role="button" onclick="openCertificate('assets/dsa-cert.png')" tabindex="0">
+          <h3>Data Structures & Algorithms</h3>
+          <p>Completed DSA course and problem solving practice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+<section id="contact" class="section bg-1" aria-label="Contact">
+  <div class="about-card contact-card">
+    <h2>Contact</h2>
+    <p class="contact-intro">Feel free to connect with me through any of the following:</p>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      <a href="mailto:youremail@example.com"><i class="fa fa-envelope"></i></a>
+      <a href="tel:+916300102195"><i class="fa fa-phone"></i></a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Certificate Modal -->
+  <div id="certificateModal" class="modal" role="dialog" aria-hidden="true">
+    <button class="modal-close" aria-label="Close certificate" onclick="closeCertificate()">×</button>
+    <img id="certImage" class="modal-content" alt="Certificate preview">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
